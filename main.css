@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(4, 167, 167);
+    background-color: rgb(6, 202, 202);
 }
 .heading{
     
@@ -10,34 +10,51 @@ body{
     width: 100%;
     
 }
+/*making responsive for small screens*/
+@media only screen and (max-width:350px){
+    .name{
+        
+        font-size: 30px !important;
+        left: 20px !important;
+        text-align: left !important;
+        
+    }
+    .edu,.dec{
+        font-size: 10px;
+        left: 20px !important;
+        text-align: left !important;
+    }
+}
 .name{
     font-size: 55px;
     font-weight: 1000;
-    margin: 0;
+    width: auto;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    left: 20px;
+    right: 20px;
+    top: 100px;
+    text-align: center;
 }
 .edu{
     font-size: 30px;
     font-weight: 1000;
     color: rgb(9, 9, 61);
-    margin: 0;
+    width: auto;
     position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    left: 20px;
+    right: 20px;
+    top: 200px;
+    text-align: center;
 }
 .dec{
     font-size: 15px;
     font-weight: 1000;
     color: rgb(9, 9, 61);
-    margin: 0;
+    width: auto;
     position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    left: 20px;
+    right: 20px;
+    top: 300px;
     text-align: center;
 }
 .topnav{
@@ -45,7 +62,7 @@ body{
     position: relative;
     
 }
-.git{
+.topnav a{
     
     float: right;
     margin-left: 11px;
