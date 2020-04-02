@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(4, 167, 167);
+}
+.heading{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    height: 500px;
+    color: beige;
+    width: 100%;
+    
+}
+.name{
+    font-size: 55px;
+    font-weight: 1000;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.edu{
+    font-size: 30px;
+    font-weight: 1000;
+    color: rgb(9, 9, 61);
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.dec{
+    font-size: 15px;
+    font-weight: 1000;
+    color: rgb(9, 9, 61);
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.topnav{
+    height: 30px;
+    position: relative;
+    
+}
+.git{
+    
+    float: right;
+    margin-left: 11px;
+    
+}
