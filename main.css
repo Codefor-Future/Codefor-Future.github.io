@@ -1,70 +1,144 @@
 body{
-    background-color: rgb(6, 202, 202);
+    font-family: 'Roboto', sans-serif;
+    margin:0px;
+    padding: 0px;
+    background-color: rgb(241, 241, 241);
 }
-.heading{
+
+
+
+
+/* propic */
+#propic{
+    display: inline;
+}
+#propic img{
+    height: 80pxpx;
+    width: 80px;
+    border-radius: 50%;
     
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: relative;
+    transition: .3s;
+}
+
+
+
+.IntroContainer{
+    
+    background-image: linear-gradient(to bottom right,#05406b,#090013da);
     height: 500px;
-    color: beige;
-    width: 100%;
-    
-}
-/*making responsive for small screens*/
-@media only screen and (max-width:350px){
-    .name{
-        
-        font-size: 30px !important;
-        left: 20px !important;
-        text-align: left !important;
-        
-    }
-    .edu,.dec{
-        font-size: 10px;
-        left: 20px !important;
-        text-align: left !important;
-    }
-}
-.name{
-    font-size: 55px;
-    font-weight: 1000;
     width: auto;
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    top: 100px;
-    text-align: center;
-}
-.edu{
-    font-size: 30px;
-    font-weight: 1000;
-    color: rgb(9, 9, 61);
-    width: auto;
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    top: 200px;
-    text-align: center;
-}
-.dec{
-    font-size: 15px;
-    font-weight: 1000;
-    color: rgb(9, 9, 61);
-    width: auto;
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    top: 300px;
-    text-align: center;
-}
-.topnav{
-    height: 30px;
+    margin: 0px;
+    padding: 5%;
+    padding-top: 200px;
     position: relative;
+    overflow-x: hidden;
+}
+.IntroText{
+    color: rgba(255, 255, 255, 0.479);
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    text-shadow: 5px 4px 10px rgba(0, 0, 0, 0.671);
+}
+.IntroText a{
+    color: rgba(255, 255, 255, 0.493);
+}
+.IntroText a:hover{
+    color: rgba(255, 255, 255, 0.699);
+}
+@media only screen and (max-width:612px){
+    #name{
+        font-size:30px !important;
+    }
+    .IntroText{
+        font-size: 12px;
+        top: 50px;
+        max-width: 200px;
+    }
+    .IntroContainer{
+        padding-top: 90px;
+        height: 400px;
+    }
+    #propic img{
+        width: 40px;
+        height: 40px;
+    }
+    #linkCardContainer{
+
+        display: block !important;
+    }
+    .linkCards{
+        width: auto !important;
+        
+    }
+
+
+
+}
+#name{
+    display: inline;
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.904);
+    position: relative;
+    top: 30px;
+    font-weight: bolder;
+    text-shadow: 5px 4px 20px rgba(0, 0, 0, 0.473);
+
+}
+
+
+
+
+
+
+
+
+/* link cards section */
+#linkCardContainer{
+    display: flex;
+
+}
+.linkCards{
+    position: relative;
+    top: 0px;
+    padding: 10px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.274);
+    width: 22%;
+    height: 120px;
+    background-color: rgb(227, 225, 225);
+    margin: 10px;
+    /* float: left; */
+}
+.linkCards:hover{
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.521);
+}
+.linkCards p{
+    font-size: 15px;
+    margin: 0px;
+    padding-top: 5px;
+    color: rgba(0, 0, 0, 0.534);
+    height: 55px;
+}
+.linkCards h2{
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.774);
     
 }
-.topnav a{
-    
-    float: right;
-    margin-left: 11px;
-    
+.linkCards button{
+    background-color: rgba(10, 10, 160, 0.747);
+    color: rgba(255, 255, 255, 0.664);
+    border: 0;
+    height: 25px;
+    width: 70px;
+    font-size: 10px;
+    text-align: center;
+    /* margin-top: 5px; */
+    position: relative;
+    top: 5px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.274);
+
+}
+.linkCards button:hover{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.541);
 }
