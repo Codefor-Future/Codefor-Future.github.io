@@ -68,11 +68,11 @@ body{
     }
 
     .linkCards h2{
-        font-size: 20px !important;
+        font-size: 1.2em !important;
     }
     .linkCards p{
         width: 90%;
-        font-size: 12px !important;
+        font-size: .8em !important;
     }
 
 
@@ -104,11 +104,11 @@ body{
     }
 
     .linkCards h2{
-        font-size: 20px !important;
+        font-size: 1.2em !important;
     }
     .linkCards p{
         width: 90%;
-        font-size: 11px !important;
+        font-size: .75em !important;
     }
 
 
