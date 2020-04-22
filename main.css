@@ -1,12 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
-    margin:0px;
-    padding: 0px;
-    background-color: rgb(241, 241, 241);
+    background-image: linear-gradient(150deg,rgb(11, 19, 36),rgb(22, 77, 128),rgb(13, 6, 36)) !important;
 }
-
-
-
 
 /* propic */
 
@@ -21,186 +16,67 @@ body{
 
 
 
-.IntroContainer{
+#IntroContainer{
     
-    background-image: linear-gradient(to bottom right,#05406b,#090013da);
-    height: 550px;
+    background-image: linear-gradient(150deg,#05406b,#110024da);
+    height: 580px;
     width: auto;
     margin: 0px;
     padding: 5%;
-    padding-top: 150px;
-    position: relative;
     overflow-x: hidden;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
-.IntroText{
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.479);
-    font-weight: bold;
-    position: relative;
-    top: 30px;
-    text-shadow: 5px 4px 10px rgba(0, 0, 0, 0.671);
-}
-.IntroText a{
-    text-decoration-line: underline;
-    color: rgba(255, 255, 255, 0.493);
-}
-.IntroText a:hover{
-    color: rgba(255, 255, 255, 0.699);
-}
-@media only screen and (min-height:500px){
-.IntroContainer{
-    height: 700px;
-}
-}
-@media only screen and (max-width:600px){
-
-    #name{
-        font-size:50px !important;
-    }
-    /* #linkCardContainer{
-
-        display: inline !important;
-    }     */
-    .linkCards{
-        display: block;
-        width: 50% !important;
-        
+.text {
+	text-transform: uppercase;
+	background: linear-gradient(to right, rgb(195, 212, 218) 0%, #b5aed1 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* font-size: 20vw; */
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 45px;
     }
 
-    .linkCards h2{
-        font-size: 1.2em !important;
-    }
-    .linkCards p{
-        width: 90%;
-        font-size: .8em !important;
-    }
-
-
-}
-@media only screen and (max-width:306px){
-    #name{
-        font-size:30px !important;
-    }
-    .IntroText{
-        font-size: 12px;
-        top: 50px;
-        max-width: 200px;
-    }
-    .IntroContainer{
-        padding-top: 100px;
-        height: 500px;
-    }
-    #propic img{
-        width: 100px;
-        height: 100px;
-    }
-    /* #linkCardContainer{
-
-        display: block !important;
-    } */
-    .linkCards{
-        width: 50% !important;
-        
-    }
-
-    .linkCards h2{
-        font-size: 1.2em !important;
-    }
-    .linkCards p{
-        width: 90%;
-        font-size: .75em !important;
-    }
-
-
-
-}
-#name{
-    display: inline;
-    font-size: 100px;
-    color: rgba(255, 255, 255, 0.904);
-    position: relative;
-    top: 30px;
+.introText{
+    color: rgba(255, 255, 255, 0.486);
+    text-shadow: 2px 2px 5px black;
     font-weight: bolder;
-    text-shadow: 5px 4px 20px rgba(0, 0, 0, 0.473);
-
-}
-
-
-
-
-
-
-
-
-/* link cards section */
-#linkCardContainer{
-    display: flex;
-
-}
-.linkCards{
-    position: relative;
-    top: 0px;
-    padding: 10px;
-    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.274);
-    width: 50%;
-    height: 120px;
-    background-color: rgb(227, 225, 225);
-    margin: 10px;
-    /* float: left; */
-}
-.linkCards:hover{
-    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.521);
-}
-.linkCards p{
     font-size: 15px;
-    margin: 0px;
-    padding-top: 5px;
-    color: rgba(0, 0, 0, 0.534);
-    height: 55px;
+}
+.linkText{
     
-}
-.linkCards h2{
-    margin: 0px;
-    color: rgba(0, 0, 0, 0.774);
-    
-}
-.linkCards button{
-    background-color: rgba(10, 10, 160, 0.747);
-    color: rgba(255, 255, 255, 0.664);
-    border: 0;
-    height: 25px;
-    width: 70px;
-    font-size: 9px;
-    text-align: center;
-    /* margin-top: 5px; */
-    position: relative;
-    top: 5px;
-    border-radius: 3px;
-    box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.274);
-
-}
-.linkCards button:hover{
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.541);
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.705);
+    font-weight: bold;
+    line-height: 30px;
 }
 
-.Para{
+@media screen and (min-width: 601px) {
+    .text {
+      font-size: 80px;
+    }
+    .introText{
+        font-size: 18px;
+    }
 
-    display: block;
-    padding: 10px;
-    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.274);
-    
-    height: auto;
-    background-color: rgb(227, 225, 225);
-    margin: 10px;
-}
-h2{
-    margin-bottom: 10px;
-    color: rgba(0, 0, 0, 0.774);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .text {
+      font-size: 45px;
+    }
+  }
+   
+
+
+.hr{
+  width: 30px;
+  border-top: 2px solid white;
+  
 }
 p{
-    font-size: 15px;
-    margin: 0px;
-    padding-top: 5px;
-    color: rgba(0, 0, 0, 0.63);
-    
+  color: rgba(224, 235, 255, 0.692);
+  font-weight: lighter;
+  font-size: 15px;
 }
