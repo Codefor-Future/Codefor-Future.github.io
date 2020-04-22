@@ -7,106 +7,112 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
     <title>Abhinav</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
 </head>
 <body >
 
-
-    <div class="IntroContainer">
-
+<!-- introduction screen -->
+    <div id="IntroContainer">
         <div id="propic">
-                <img src="propic.jpg">
-
-            </div>
-
-
-        <div class="IntroText">Hi, I'm</div><br>
-        <div id="name">ABHINAV P
-
-
-
-        </div><br>
-        <div class="IntroText">
-            I'm a web developer living in 
-            Kozhikode-India, <br>currently studying at the 
-            Government <br>Engineering College Wayanad<br><br>
-            <br>
-
-            <a href="lsd" >Instagram</a><br>
-            <a href="lsd" >LinkedIn</a><br>
-            <a href="lsd" >GitHub</a>
+            <img src="propic.jpg" alt="profile pic" class="mx-auto d-block">
         </div>
-
-
-
-
-    </div>
-
-
-
-
-        <!-- The links -->
-    <div id="linkCardContainer">
-    <div class="linkCards">
-
-            <h2>Education</h2>
-            <p>
-                Currently Studying B-tech Computer Science
-            </p>
-
-            <a href="#eduPara"><button >SHOWMORE</button></a>
-
-    </div>
-    <div class="linkCards">
-
-        <h2>Skills</h2>
-        <p>Simple and Creative UI Designs<br>
-
+        <br><br><br>
+        <h6 class="text-center display-6 introText"> Hi, I'm</h6>
+        <h1 class=" text-center font-weight-bold text">ABHINAV</h1>
+        <p class="introText text-center">I'm a web developer living in Kozhikode-India,
+            currently studying at the Government
+            Engineering College Wayanad
         </p>
-        <a href="#Skills"><button >SHOWMORE</button></a>
+        <br>
+        
+<!-- social media links -->
+<ul class="nav justify-content-center">
+    <li class="nav-item ">
+      <a class="nav-link" href="https://github.com/Codefor-Future" target="_blank"><span class="fa fa-github fa-1x"></span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.linkedin.com/in/abhinav-chek" target="_blank"><span class="fa fa-linkedin fa-1x"></span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.instagram.com/_00.05/" target="_blank"><span class="fa fa-instagram fa-1x"></span></a>
+    </li>
+  </ul> 
+
 
     </div>
+<!-- introduction screen over -->
 
 
+<!-- main content starts here -->
 
 
+  <div class="container-fluid ">
 
+<!-- carosel -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  
+  <ul class="carousel-indicators">
+    
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="">
+        <div class=" text-center col-sm mt-4"><span class="linkText">About Me</span><br>
+        <hr class="hr"></div>
+        
+
+        <p class="text-center">I'm a B.Tech first year student<br>
+          <span class="fa fa-heart"></span> Javascript<br>
+          Best at Implimenting knowledge<br>
+          Diving deep into the world of Web Development <br>
+          <span class="font-weight-bold">If there is a will there's a way</span><br>
+          
+        </p><br><br><br><br><br><br>
     </div>
+    </div>
+    <div class="carousel-item">
+      <div class="">
+        <div class=" text-center col-sm mt-4"><span class="linkText">Education</span><br>
+        <hr class="hr"></div>
+        
 
+        <p class="text-center"><span class="font-weight-bold">D</span>oing B.Tech in Computer Science Government Engineering College Wayanad (KeralaTechnologicalUniversity) Second Semester 2019 onwards.<br>
 
-<div id="eduPara" class="Para">
-    <h2>Education</h2>
-    <p>Doing <b>B.Tech in Computer Science</b> Government Engineering
-    College Wayanad (KeralaTechnologicalUniversity) Second
-    Semester 2019 onwards.<br><br>
-    Higher Secondary, Computer Science, GVHSS Atholi, Higher
-    Secondary
-    Education
-    Department,
-    Government
-    of
-    Kerala,Percentage:<b>92.4</b>,2017-19.
-    <br><br>SSLC, SGMGHSS Kolathur, General Education Department
-    Kerala,Percentage:<b>95</b>,2016-17.
-    </p>
+          <span class="font-weight-bold">H</span>igher Secondary, Computer Science, GVHSS Atholi, Higher Secondary Education Department, Government of Kerala,Percentage:92.4,2017-19.<br>
+          
+          <span class="font-weight-bold">S</span>SLC, SGMGHSS Kolathur, General Education Department Kerala,Percentage:95,2016-17. 
+          
+        </p><br><br><br><br><br>
+      </div>    
+    </div>
+<!-- carosel end -->
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev " href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
 
 </div>
 
-<div id="Skills" class="Para">
-    <h2>Skills</h2>
-    <p>
-        Strong FrontEnd Knowledge.
-        <br>Creative UI Designer<br>
-        Fluent in <b>Python</b> and <b>C</b><br>
+  </div>
+<!-- main content ends here -->
 
 
-
-    </p>
-
-</div>
-
-
-
-
+</script>
 </body>
 </html>
